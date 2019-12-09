@@ -36,5 +36,50 @@ public class OpenAllFiles extends AppCompatActivity {
         else if (theme.equals("0") && file.equals("2")){
             pdfView.fromAsset("test1.pdf").load();
         }
+        else if (theme.equals("1") && file.equals("0")){
+            pdfView.fromAsset("presentation/pres5.2.pdf").load();
+        }
+        else if (theme.equals("1") && file.equals("1")){
+            pdfView.fromAsset("lectMat/lectMat5.2.pdf").load();
+        }
+        else if (theme.equals("1") && file.equals("2")){
+            pdfView.fromAsset("test2.pdf").load();
+        }
+        else if (theme.equals("2") && file.equals("0")){
+            pdfView.fromAsset("presentation/pres5.3.pdf").load();
+        }
+        else if (theme.equals("2") && file.equals("1")){
+            pdfView.fromAsset("lectMat/lectMat5.3.pdf").load();
+        }
+        else if (theme.equals("2") && file.equals("2")){
+            pdfView.fromAsset("test3.pdf").load();
+        }
+        else if (theme.equals("3") && file.equals("0")){
+            pdfView.fromAsset("presentation/pres5.4.pdf").load();
+        }
+        else if (theme.equals("3") && file.equals("1")){
+            pdfView.fromAsset("lectMat/lectMat5.4.pdf").load();
+        }
+        else if (theme.equals("3") && file.equals("2")){
+            pdfView.fromAsset("test4.pdf").load();
+        }
+        else if (theme.equals("4") && file.equals("0")){
+            pdfView.fromAsset("presentation/pres5.5.pdf").load();
+        }
+        else if (theme.equals("4") && file.equals("1")){
+            pdfView.fromAsset("lectMat/lectMat5.5.pdf").load();
+        }
+        else if (theme.equals("4") && file.equals("2")){
+            pdfView.fromAsset("test5.pdf").load();
+        }
+        else if (theme.equals("5") && file.equals("0")){
+            pdfView.fromAsset("presentation/pres5.6.pdf").load();
+        }
+        else if (theme.equals("5") && file.equals("1")){
+            pdfView.fromAsset("lectMat/lectMat5.6.pdf").load();
+        }
+        else if (theme.equals("5") && file.equals("2")){
+            pdfView.fromAsset("test6.pdf").load();
+        }
     }
 }

@@ -26,7 +26,7 @@ public class SelectFile extends AppCompatActivity {
         final String[] themeNames = new String[] {
                 "1) Презентация",
                 "2) Учебный материал",
-                "3) Контрольные задание"
+                "3) Контрольные вопросы"
 
         };
 
