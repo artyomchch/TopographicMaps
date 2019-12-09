@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.topographicmaps.R;
-import com.example.topographicmaps.tests.SelectTest;
 import com.github.barteksc.pdfviewer.PDFView;
 
 public class OpenFile extends AppCompatActivity {
@@ -21,7 +20,7 @@ public class OpenFile extends AppCompatActivity {
 
 
 
-        PDFView pdfView = findViewById(R.id.pdfView);
+        PDFView pdfView = findViewById(R.id.dff);
         pdfView.fromAsset(str).load();
 
     }

@@ -5,11 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".openFile.OpenFile">
+    tools:context=".material.SelectFile">
 
-    <com.github.barteksc.pdfviewer.PDFView
-        android:id="@+id/dff"
+    <ListView
+        android:id="@+id/listFile"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
-
+        android:layout_height="match_parent" />
 </LinearLayout>

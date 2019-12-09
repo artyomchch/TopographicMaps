@@ -15,11 +15,9 @@ import com.example.topographicmaps.openFile.OpenFile;
 
 public class SelectTest extends AppCompatActivity  {
 
-    String  typeTest = "";
+    String typeTest = "";
 
-    public String getTypeTest() {
-        return typeTest;
-    }
+
 
     protected ListView list;
     @Override

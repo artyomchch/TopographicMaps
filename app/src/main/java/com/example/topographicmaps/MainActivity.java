@@ -20,6 +20,9 @@ public class MainActivity extends AppCompatActivity {
 
     LinearLayout main;
     TextView test;
+    TextView bold2;
+    TextView bold1;
+    TextView test2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,10 +30,17 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         main = findViewById(R.id.main_layout);
-        test = findViewById(R.id.review);
+        test = findViewById(R.id.review1);
+        bold1 = findViewById(R.id.bold1);
+        bold2 = findViewById(R.id.bold2);
+        test2 = findViewById(R.id.test2);
+
 
         Strings str = new Strings();
-        test.setText(str.values);
+        test.setText(str.values1);
+        bold1.setText(str.bold1);
+        bold2.setText(str.bold2);
+        test2.setText(str.values2);
 
         Drawable myImg = ContextCompat.getDrawable(getApplicationContext(), R.drawable.miltary);
         if (myImg != null) {
