@@ -12,11 +12,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
+        android:paddingBottom="10dp"
         android:text="Список тем:"
         android:textSize="20dp" />
 
     <ListView
         android:id="@+id/listOfThemes"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:scrollbarSize="20sp" />
 </LinearLayout>
