@@ -91,57 +91,59 @@ public class OpenAllFiles extends AppCompatActivity {
             pdfView.fromAsset("test6.pdf").load();
         }
 
+////////////////////////SOLDIER////////////////////////////////////
+
 
         else if (theme.equals("0") && file.equals("0") && soldier.equals("0")) {
-            pdfView.fromAsset("presentation/pres5.1.pdf").load();
+            pdfView.fromAsset("soldier/lectsoldier/presentation/pres5.1.1.pdf").load();
         }
         else if (theme.equals("0") && file.equals("1") && soldier.equals("0")){
-            pdfView.fromAsset("lectMat/lectMat5.1.pdf").load();
+            pdfView.fromAsset("soldier/lectsoldier/theme5.1.1.pdf").load();
         }
         else if (theme.equals("0") && file.equals("2") && soldier.equals("0")){
             pdfView.fromAsset("test1.pdf").load();
         }
         else if (theme.equals("1") && file.equals("0") && soldier.equals("0")){
-            pdfView.fromAsset("presentation/pres5.2.pdf").load();
+            pdfView.fromAsset("soldier/lectsoldier/presentation/pres5.2.1.pdf").load();
         }
         else if (theme.equals("1") && file.equals("1") && soldier.equals("0")){
-            pdfView.fromAsset("lectMat/lectMat5.2.pdf").load();
+            pdfView.fromAsset("soldier/lectsoldier/theme5.2.1.pdf").load();
         }
         else if (theme.equals("1") && file.equals("2") && soldier.equals("0")){
             pdfView.fromAsset("test2.pdf").load();
         }
         else if (theme.equals("2") && file.equals("0") && soldier.equals("0")){
-            pdfView.fromAsset("presentation/pres5.3.pdf").load();
+            pdfView.fromAsset("soldier/lectsoldier/presentation/pres5.3.1.pdf").load();
         }
         else if (theme.equals("2") && file.equals("1") && soldier.equals("0")){
-            pdfView.fromAsset("lectMat/lectMat5.3.pdf").load();
+            pdfView.fromAsset("soldier/lectsoldier/theme5.3.1.pdf").load();
         }
         else if (theme.equals("2") && file.equals("2") && soldier.equals("0")){
             pdfView.fromAsset("test3.pdf").load();
         }
         else if (theme.equals("3") && file.equals("0") && soldier.equals("0")){
-            pdfView.fromAsset("presentation/pres5.4.pdf").load();
+            pdfView.fromAsset("soldier/lectsoldier/presentation/pres5.4.1.pdf").load();
         }
         else if (theme.equals("3") && file.equals("1") && soldier.equals("0")){
-            pdfView.fromAsset("lectMat/lectMat5.4.pdf").load();
+            pdfView.fromAsset("soldier/lectsoldier/theme5.4.1.pdf").load();
         }
         else if (theme.equals("3") && file.equals("2") && soldier.equals("0")){
             pdfView.fromAsset("test4.pdf").load();
         }
         else if (theme.equals("4") && file.equals("0") && soldier.equals("0")){
-            pdfView.fromAsset("presentation/pres5.5.pdf").load();
+            pdfView.fromAsset("soldier/lectsoldier/presentation/pres5.5.1.pdf").load();
         }
         else if (theme.equals("4") && file.equals("1") && soldier.equals("0")){
-            pdfView.fromAsset("lectMat/lectMat5.5.pdf").load();
+            pdfView.fromAsset("soldier/lectsoldier/theme5.5.1.pdf").load();
         }
         else if (theme.equals("4") && file.equals("2") && soldier.equals("0")){
             pdfView.fromAsset("test5.pdf").load();
         }
         else if (theme.equals("5") && file.equals("0") && soldier.equals("0")){
-            pdfView.fromAsset("presentation/pres5.6.pdf").load();
+            pdfView.fromAsset("soldier/lectsoldier/presentation/pres5.6.1.pdf").load();
         }
         else if (theme.equals("5") && file.equals("1") && soldier.equals("0")){
-            pdfView.fromAsset("lectMat/lectMat5.6.pdf").load();
+            pdfView.fromAsset("soldier/lectsoldier/theme5.6.1.pdf").load();
         }
         else if (theme.equals("5") && file.equals("2") && soldier.equals("0")){
             pdfView.fromAsset("test6.pdf").load();

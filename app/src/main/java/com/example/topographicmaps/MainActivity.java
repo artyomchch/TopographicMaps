@@ -31,17 +31,17 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         main = findViewById(R.id.main_layout);
-        test = findViewById(R.id.review1);
-        bold1 = findViewById(R.id.bold1);
-        bold2 = findViewById(R.id.bold2);
-        test2 = findViewById(R.id.test2);
+      //  test = findViewById(R.id.review1);
+      //  bold1 = findViewById(R.id.bold1);
+       // bold2 = findViewById(R.id.bold2);
+      //  test2 = findViewById(R.id.test2);
 
 
-        Strings str = new Strings();
-        test.setText(str.values1);
-        bold1.setText(str.bold1);
-        bold2.setText(str.bold2);
-        test2.setText(str.values2);
+       // Strings str = new Strings();
+     //   test.setText(str.values1);
+     //   bold1.setText(str.bold1);
+     //   bold2.setText(str.bold2);
+      //  test2.setText(str.values2);
 
 
         Drawable myImg = ContextCompat.getDrawable(getApplicationContext(), R.drawable.miltary);
