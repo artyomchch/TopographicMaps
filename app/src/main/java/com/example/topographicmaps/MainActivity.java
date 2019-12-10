@@ -14,10 +14,11 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.topographicmaps.material.SelectTheme;
+import com.example.topographicmaps.soldier_officer.SoldierOfficer;
 import com.example.topographicmaps.tests.SelectTest;
 
 public class MainActivity extends AppCompatActivity {
-
+    String officerOrSoldier;
     LinearLayout main;
     TextView test;
     TextView bold2;
@@ -42,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
         bold2.setText(str.bold2);
         test2.setText(str.values2);
 
+
         Drawable myImg = ContextCompat.getDrawable(getApplicationContext(), R.drawable.miltary);
         if (myImg != null) {
             myImg.setAlpha(64);
@@ -51,28 +53,31 @@ public class MainActivity extends AppCompatActivity {
 
 
         final Animation animAlpha = AnimationUtils.loadAnimation(this, R.anim.alpha);
-        Button btnAlpha =findViewById(R.id.tests);
+        Button btnAlpha =findViewById(R.id.soldier);
         btnAlpha.setOnClickListener(new Button.OnClickListener(){
             @Override
             public void onClick(View view) {
+                officerOrSoldier = "0";
                 view.startAnimation(animAlpha);
-                goToActive(SelectTest.class);
+                goToActive(SoldierOfficer.class);
             }
         });
 
         final Animation animBeta = AnimationUtils.loadAnimation(this, R.anim.alpha);
-        Button btnBeta =findViewById(R.id.material);
+        Button btnBeta =findViewById(R.id.officer);
         btnBeta.setOnClickListener(new Button.OnClickListener(){
             @Override
             public void onClick(View view) {
+                officerOrSoldier = "1";
                 view.startAnimation(animBeta);
-                goToActive(SelectTheme.class);
+                goToActive(SoldierOfficer.class);
             }
         });
     }
 
     protected void goToActive(Class activity){
         Intent intent = new Intent(this, activity);
+        intent.putExtra("officer", officerOrSoldier);
         startActivity(intent);
     }
 

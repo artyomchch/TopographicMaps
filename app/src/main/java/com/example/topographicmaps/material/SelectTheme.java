@@ -19,6 +19,7 @@ public class SelectTheme extends AppCompatActivity {
 
     protected ListView list;
     String numberTheme = "";
+    String numberSoldier;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +28,7 @@ public class SelectTheme extends AppCompatActivity {
         list = findViewById(R.id.listOfThemes);
        // registerForContextMenu(list);
 
+        numberSoldier = getIntent().getStringExtra("officer");
 
 
 // определяем строковый массив
@@ -41,10 +43,31 @@ public class SelectTheme extends AppCompatActivity {
 
         };
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
-                android.R.layout.simple_list_item_1, themeNames);
+        final String[] soldier = new String[] {         // for soldier
+                "Тема 5 Занятие №1\nТопографические карты и их чтение.",
+                "Тема 5 Занятие №2\nПодготовка карты к работе, измерения по карте.",
+                "Тема 5 Занятие №3\nЦелеуказание по карте.",
+                "Тема 5 Занятие №4\nБоевые графические документы.",
+                "Тема 5 Занятие №5\nМестность, как элемент боевой обстановки.",
+                "Тема 5 Занятие №6\nОриентирование на местности. Движение по азимуту"
 
-        list.setAdapter(adapter);
+        };
+
+
+        if (numberSoldier.equals("1")){
+            ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
+                    android.R.layout.simple_list_item_1, themeNames);
+            list.setAdapter(adapter);
+        }
+        else{
+            ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
+                    android.R.layout.simple_list_item_1, soldier);
+            list.setAdapter(adapter);
+        }
+
+
+
+
 
 
         onButton();
@@ -90,6 +113,7 @@ public class SelectTheme extends AppCompatActivity {
     protected void goToActive(Class activity){
         Intent intent = new Intent(this, activity);
         intent.putExtra("numberTheme", numberTheme);
+        intent.putExtra("officer", numberSoldier);
         startActivity(intent);
     }
 

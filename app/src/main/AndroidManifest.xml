@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".material.OpenAllFiles"></activity>
+        <activity android:name=".soldier_officer.SoldierOfficer"></activity>
+        <activity android:name=".material.OpenAllFiles" />
         <activity android:name=".material.SelectFile" />
         <activity android:name=".openFile.OpenFile" />
         <activity android:name=".tests.SelectTest" />

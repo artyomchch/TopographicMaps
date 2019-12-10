@@ -16,7 +16,7 @@ import com.example.topographicmaps.openFile.OpenFile;
 public class SelectTest extends AppCompatActivity  {
 
     String typeTest = "";
-
+    String soldierrrr;
 
 
     protected ListView list;
@@ -24,6 +24,10 @@ public class SelectTest extends AppCompatActivity  {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_test);
+
+        list =  findViewById(R.id.listOfTests);
+        soldierrrr = getIntent().getStringExtra("officer");
+
 
         // элементы списка которые будут в него внесены
         final String[] themeNames = new String[] {
@@ -36,15 +40,38 @@ public class SelectTest extends AppCompatActivity  {
                         " командиром."
         };
 
+
+        final String[] soldier = new String[] {         // for soldier
+                "Тема 5 Занятие №1\nТопографические карты и их чтение.",
+                "Тема 5 Занятие №2\nПодготовка карты к работе, измерения по карте.",
+                "Тема 5 Занятие №3\nЦелеуказание по карте.",
+                "Тема 5 Занятие №4\nБоевые графические документы.",
+                "Тема 5 Занятие №5\nМестность, как элемент боевой обстановки.",
+                "Тема 5 Занятие №6\nОриентирование на местности. Движение по азимуту"
+
+        };
+
+
+        if (soldierrrr.equals("1")){
+            ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
+                    android.R.layout.simple_list_item_1, themeNames);
+            list.setAdapter(adapter);
+        }
+        else{
+            ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
+                    android.R.layout.simple_list_item_1, soldier);
+            list.setAdapter(adapter);
+        }
+
         // Связываемся с ListView
-        list =  findViewById(R.id.listOfTests);
+
 
         // создаем адаптер
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>
-                (this, android.R.layout.simple_list_item_1, themeNames);
-
-        // устанавливаем адаптер списку
-        list.setAdapter(adapter);
+//        ArrayAdapter<String> adapter = new ArrayAdapter<String>
+//                (this, android.R.layout.simple_list_item_1, themeNames);
+//
+//        // устанавливаем адаптер списку
+//        list.setAdapter(adapter);
 
         onButton();
 

@@ -9,25 +9,27 @@
     tools:context=".MainActivity">
 
 
-    <ImageView
-        android:id="@+id/imageView"
+    <TextView
+        android:id="@+id/main"
         android:layout_width="match_parent"
-        android:layout_height="131dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
         android:paddingTop="10dp"
-        app:srcCompat="@drawable/mireagerb" />
+        android:text="Для студентов, обучающихся по программе подготовки офицеров запаса."
+        android:textSize="20dp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:paddingTop="10dp"
-        android:text='РАЗДЕЛ 3. "ВОЕННАЯ ПОДГОТОВКА"\n ТЕМА 5. "Основы военной топографии"'
+        android:text='Тема №5 "Основы военной топографии"'
         android:textSize="25dp"
         android:textStyle="bold" />
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="330dp"
+        android:layout_height="440dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="10dp">
@@ -37,35 +39,18 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/bold1"
+            <ImageView
+                android:id="@+id/imageViewSoldat"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TextView"
-                android:textSize="18dp"
-                android:textStyle="bold" />
+                android:layout_height="240dp"
+                app:srcCompat="@drawable/officer" />
 
             <TextView
-                android:id="@+id/review1"
+                android:id="@+id/soldierOff"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView"
-                android:textSize="16dp" />
+                android:text="TextView" />
 
-            <TextView
-                android:id="@+id/bold2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TextView"
-                android:textSize="18dp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/test2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TextView"
-                android:textSize="16dp" />
         </LinearLayout>
     </ScrollView>
 
@@ -77,26 +62,26 @@
         android:paddingBottom="20dp">
 
         <Button
-            android:id="@+id/officer"
+            android:id="@+id/material"
             android:layout_width="86dp"
             android:layout_height="100dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:background="@drawable/custom_button"
-            android:text='"Тактическая подготовка" \n ВУС-541100, 521300, 461700, 1215400, 141100 '
-            android:textSize="15sp" />
+            android:text="Основной материал"
+            android:textSize="18sp" />
 
         <Button
-            android:id="@+id/soldier"
+            android:id="@+id/tests"
             android:layout_width="86dp"
             android:layout_height="100dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:background="@drawable/custom_button"
-            android:text='"Тактическая и тактико-специальная подготовка"\n ВУС-461786, 423256'
-            android:textSize="15sp" />
+            android:text="вопросы по материалу"
+            android:textSize="18sp" />
 
     </LinearLayout>
 

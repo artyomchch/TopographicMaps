@@ -15,6 +15,7 @@ import com.example.topographicmaps.R;
 public class SelectFile extends AppCompatActivity {
     String theme;
     String numberFile = "";
+    String soldier;
     protected ListView listView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +36,7 @@ public class SelectFile extends AppCompatActivity {
 
         listView.setAdapter(adapter);
         theme = getIntent().getStringExtra("numberTheme");
+        soldier = getIntent().getStringExtra("officer");
 
         onButton();
 
@@ -71,6 +73,7 @@ public class SelectFile extends AppCompatActivity {
         Intent intent = new Intent(this, activity);
         intent.putExtra("numberFile", numberFile);
         intent.putExtra("numberTheme", theme);
+        intent.putExtra("officer", soldier);
         startActivity(intent);
     }
 
