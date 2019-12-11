@@ -1,14 +1,17 @@
 package com.example.topographicmaps.soldier_officer;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.topographicmaps.R;
@@ -19,6 +22,7 @@ import com.example.topographicmaps.tests.SelectTest;
 import org.w3c.dom.Text;
 
 public class SoldierOfficer extends AppCompatActivity {
+    LinearLayout mainlayout;
     ImageView image;
     String soldierOfficer;
     TextView sold;
@@ -27,10 +31,20 @@ public class SoldierOfficer extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_soldier_officer);
+        mainlayout = findViewById(R.id.main_layout);
+
+        Drawable myImg = ContextCompat.getDrawable(getApplicationContext(), R.drawable.miltary);
+        if (myImg != null) {
+            myImg.setAlpha(64);
+        }
+        mainlayout.setBackground(myImg);
+
 
         image = findViewById(R.id.imageViewSoldat);
         sold = findViewById(R.id.soldierOff);
         main = findViewById(R.id.main);
+
+
 
         soldierOfficer = getIntent().getStringExtra("officer");  // получение данных об офицере или нет
 
