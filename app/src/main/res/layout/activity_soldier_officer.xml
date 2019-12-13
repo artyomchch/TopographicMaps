@@ -2,30 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:id="@+id/main_layout"
     tools:context=".MainActivity">
 
-
-    <TextView
-        android:id="@+id/main"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:paddingTop="10dp"
-        android:text="Для студентов, обучающихся по программе подготовки офицеров запаса."
-        android:textSize="20dp" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:paddingTop="10dp"
-        android:text='Тема №5 "Основы военной топографии"'
-        android:textSize="25dp"
-        android:textStyle="bold" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -40,6 +22,26 @@
             android:layout_width="match_parent"
             android:layout_height="300dp"
             android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:text="Для студентов, обучающихся по программе подготовки офицеров запаса."
+                android:textScaleX="1"
+                android:textSize="16sp"
+                app:autoSizeTextType="uniform" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:text='Тема №5 "Основы военной топографии"'
+                android:textSize="21dp"
+                android:textStyle="bold" />
 
             <ImageView
                 android:id="@+id/imageViewSoldat"
@@ -56,36 +58,42 @@
         </LinearLayout>
     </ScrollView>
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="bottom"
-        android:orientation="horizontal"
-        android:paddingBottom="10dp">
+        android:gravity="center_horizontal">
 
         <Button
             android:id="@+id/material"
-            android:layout_width="86dp"
-            android:layout_height="100dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/custom_button"
-            android:text="Основной материал"
-            android:textSize="18sp" />
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Основной\n материал"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <Button
             android:id="@+id/tests"
-            android:layout_width="86dp"
-            android:layout_height="100dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/custom_button"
-            android:text="вопросы по материалу"
-            android:textSize="18sp" />
-
-    </LinearLayout>
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Контрольные\n вопросы"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </LinearLayout>

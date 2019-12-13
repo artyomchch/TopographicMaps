@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Topographic maps</string>
+    <string name="n_541100_521300_461700_1215400_141100">Офицеры</string>
+    <string name="soldier">Солдаты</string>
+    <string name="mainTitle">ДИСЦИПЛИНА: "ТАКТИЧЕСКАЯ ПОДГОТОВКА"\nРАЗДЕЛ 3. ВОЕННАЯ ТОПОГРАФИЯ</string>
+    <string name="todo">TODO</string>
 </resources>

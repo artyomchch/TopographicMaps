@@ -9,50 +9,102 @@
     tools:context=".MainActivity">
 
 
-    <ImageView
-        android:id="@+id/imageView"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="131dp"
-        android:paddingTop="10dp"
-        app:srcCompat="@drawable/mireagerb" />
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:paddingTop="10dp"
-        android:text='РАЗДЕЛ 3. "ВОЕННАЯ ПОДГОТОВКА"\n ТЕМА 5. "Основы военной топографии"'
-        android:textSize="25dp"
-        android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="131dp"
+                android:contentDescription="@string/todo"
+                android:paddingTop="10dp"
+                app:srcCompat="@drawable/mireagerb" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/mainTitle"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="bottom"
-        android:orientation="horizontal"
-        android:paddingBottom="20dp">
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="bottom">
 
-        <Button
-            android:id="@+id/officer"
-            android:layout_width="86dp"
-            android:layout_height="100dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/custom_button"
-            android:text='"Тактическая подготовка" \n ВУС-541100, 521300, 461700, 1215400, 141100 '
-            android:textSize="15sp" />
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingBottom="10dp">
 
-        <Button
-            android:id="@+id/soldier"
-            android:layout_width="86dp"
-            android:layout_height="100dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:paddingBottom="0dp"
+                android:text="Тактическая подготовка\nВУС-541100, 521300, 461700, 1215400, 141100" />
+
+            <Button
+                android:id="@+id/officer"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0"
+                android:background="@drawable/custom_button"
+                android:freezesText="false"
+                android:text="@string/n_541100_521300_461700_1215400_141100"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/custom_button"
-            android:text='"Тактическая и тактико-специальная подготовка"\n ВУС-461786, 423256'
-            android:textSize="15sp" />
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:paddingRight="10dp"
+                android:text="Тактическая и тактико-специальная подготовка\nВУС-461786, 423256 " />
+
+            <Button
+                android:id="@+id/soldier"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/custom_button"
+                android:text="@string/soldier"
+                android:textSize="14sp" />
+        </LinearLayout>
 
     </LinearLayout>
 
