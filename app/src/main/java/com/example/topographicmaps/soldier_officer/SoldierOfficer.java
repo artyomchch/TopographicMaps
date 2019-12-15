@@ -33,11 +33,11 @@ public class SoldierOfficer extends AppCompatActivity {
         setContentView(R.layout.activity_soldier_officer);
         mainlayout = findViewById(R.id.main_layout);
 
-        Drawable myImg = ContextCompat.getDrawable(getApplicationContext(), R.drawable.miltary);
-        if (myImg != null) {
-            myImg.setAlpha(64);
-        }
-        mainlayout.setBackground(myImg);
+//        Drawable myImg = ContextCompat.getDrawable(getApplicationContext(), R.drawable.miltary);
+//        if (myImg != null) {
+//            myImg.setAlpha(64);
+//        }
+//        mainlayout.setBackground(myImg);
 
 
         image = findViewById(R.id.imageViewSoldat);

@@ -5,6 +5,7 @@
     android:id="@+id/main_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/miltary"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -12,11 +13,12 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="10dp"
-        android:layout_weight="1">
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_weight="1"
+        android:background="#801D1D1D">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -28,7 +30,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:paddingLeft="10dp"
                 android:paddingTop="10dp"
+                android:paddingRight="10dp"
                 android:text="Для студентов, обучающихся по программе подготовки офицеров запаса."
                 android:textScaleX="1"
                 android:textSize="16sp"
@@ -39,6 +43,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:paddingTop="10dp"
+                android:paddingBottom="3dp"
                 android:text='Тема №5 "Основы военной топографии"'
                 android:textSize="21dp"
                 android:textStyle="bold" />
@@ -53,6 +58,9 @@
                 android:id="@+id/soldierOff"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
                 android:text="TextView" />
 
         </LinearLayout>
@@ -62,7 +70,9 @@
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal">
+        android:background="#801D1D1D"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp">
 
         <Button
             android:id="@+id/material"

@@ -44,11 +44,11 @@ public class MainActivity extends AppCompatActivity {
       //  test2.setText(str.values2);
 
 
-        Drawable myImg = ContextCompat.getDrawable(getApplicationContext(), R.drawable.miltary);
-        if (myImg != null) {
-            myImg.setAlpha(64);
-        }
-        main.setBackground(myImg);
+//        Drawable myImg = ContextCompat.getDrawable(getApplicationContext(), R.drawable.miltary);
+//        if (myImg != null) {
+//            myImg.setAlpha(64);
+//        }
+//        main.setBackground(myImg);
 
 
 
